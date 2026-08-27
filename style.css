@@ -1,0 +1,825 @@
+```css
+/* =========================================================
+   AROMMA CO.
+   Estilo: cafeteria artesanal + casa de vó sofisticada
+========================================================= */
+
+
+/* -------------------------
+   RESET
+------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f6f0e7;
+    color: #3b2a22;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(246, 240, 231, 0.94);
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(59, 42, 34, 0.08);
+}
+
+.navbar {
+    max-width: 1250px;
+    min-height: 82px;
+
+    margin: auto;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    color: #493126;
+}
+
+
+/* LINKS */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links a {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    color: #5d493d;
+
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #9a684d;
+}
+
+
+/* BOTÃO NAVBAR */
+
+.nav-button {
+    padding: 11px 21px;
+
+    border-radius: 30px;
+
+    background-color: #654535;
+    color: #fffaf4;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+
+    transition: 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #432d23;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   BOTÕES
+========================================================= */
+
+.button {
+    display: inline-block;
+
+    padding: 14px 26px;
+
+    border-radius: 30px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+
+/* botão principal */
+
+.primary {
+    background-color: #704b38;
+    color: #fffaf5;
+}
+
+.primary:hover {
+    background-color: #4c3126;
+}
+
+
+/* botão secundário */
+
+.secondary {
+    border: 1px solid #d7c5b5;
+
+    background-color: rgba(255, 250, 244, 0.08);
+
+    color: #fffaf5;
+}
+
+.secondary:hover {
+    background-color: #fffaf4;
+    color: #4c3126;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 160px 8% 100px;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(47, 31, 24, 0.90),
+            rgba(47, 31, 24, 0.65),
+            rgba(47, 31, 24, 0.25)
+        ),
+        url("Aromma1.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 760px;
+    color: white;
+}
+
+
+/* pequena frase */
+
+.hero-tag {
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    color: #ead6c3;
+}
+
+
+/* título */
+
+.hero h1 {
+    max-width: 750px;
+
+    margin-bottom: 25px;
+
+    font-size: clamp(48px, 7vw, 82px);
+
+    line-height: 1.02;
+
+    font-weight: normal;
+}
+
+
+/* descrição */
+
+.hero p {
+    max-width: 600px;
+
+    margin-bottom: 35px;
+
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+
+    color: #eee3d8;
+}
+
+
+/* botões */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   CONFIGURAÇÃO GERAL DAS SEÇÕES
+========================================================= */
+
+section {
+    padding: 100px 8%;
+}
+
+
+/* =========================================================
+   TÍTULOS
+========================================================= */
+
+.section-title {
+    max-width: 850px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+
+/* etiqueta */
+
+.section-title span {
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    color: #a26d50;
+}
+
+
+/* título */
+
+.section-title h2 {
+    margin-bottom: 20px;
+
+    font-size: clamp(34px, 5vw, 58px);
+
+    line-height: 1.12;
+
+    font-weight: normal;
+
+    color: #3b2a22;
+}
+
+
+/* descrição */
+
+.section-title p {
+    max-width: 700px;
+
+    margin: auto;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+    color: #705d51;
+}
+
+
+/* =========================================================
+   SOBRE
+========================================================= */
+
+.about {
+    background-color: #f6f0e7;
+
+    position: relative;
+}
+
+
+/* pequeno detalhe decorativo */
+
+.about::before {
+    content: "A";
+
+    position: absolute;
+
+    top: 30px;
+    left: 7%;
+
+    font-size: 130px;
+
+    color: rgba(112, 75, 56, 0.035);
+}
+
+
+/* texto */
+
+.about .section-title {
+    max-width: 900px;
+}
+
+.about .section-title p {
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   MENU
+========================================================= */
+
+.menu {
+    background-color: #ebe0d2;
+}
+
+
+.menu-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+/* CARD */
+
+.menu-card {
+    overflow: hidden;
+
+    background-color: #fffaf4;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(67, 45, 35, 0.08);
+
+    transition: 0.35s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 40px rgba(67, 45, 35, 0.15);
+}
+
+
+/* IMAGEM DO PRODUTO */
+
+.menu-image {
+    height: 280px;
+
+    overflow: hidden;
+
+    background-color: #dfd2c3;
+}
+
+.menu-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s ease;
+}
+
+.menu-card:hover .menu-image img {
+    transform: scale(1.05);
+}
+
+
+/* CONTEÚDO */
+
+.menu-content {
+    padding: 28px;
+}
+
+.menu-content h3 {
+    margin-bottom: 10px;
+
+    font-size: 25px;
+
+    color: #3d2a21;
+}
+
+.menu-content p {
+    margin-bottom: 20px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    color: #705d51;
+
+    line-height: 1.7;
+}
+
+
+/* PREÇO */
+
+.price {
+    display: block;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    color: #87583f;
+}
+
+
+/* =========================================================
+   DIFERENCIAIS
+========================================================= */
+
+.benefits {
+    background-color: #f6f0e7;
+}
+
+
+.benefits-container {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.benefit {
+    padding: 40px 30px;
+
+    background-color: #fffaf4;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    border: 1px solid rgba(112, 75, 56, 0.08);
+
+    transition: 0.3s ease;
+}
+
+
+.benefit:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 30px rgba(67, 45, 35, 0.08);
+}
+
+
+.benefit h3 {
+    margin-bottom: 15px;
+
+    font-size: 23px;
+
+    color: #493126;
+}
+
+
+.benefit p {
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #705d51;
+}
+
+
+/* =========================================================
+   GALERIA
+========================================================= */
+
+.gallery {
+    background-color: #ebe0d2;
+}
+
+
+.gallery-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+
+.gallery-item {
+    height: 330px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    background-color: #d8c8b8;
+}
+
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s ease;
+}
+
+
+.gallery-item:hover img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta {
+    text-align: center;
+
+    background-color: #5a392b;
+
+    color: white;
+}
+
+
+.cta h2 {
+    max-width: 800px;
+
+    margin: auto;
+    margin-bottom: 20px;
+
+    font-size: clamp(36px, 5vw, 58px);
+
+    line-height: 1.1;
+
+    font-weight: normal;
+}
+
+
+.cta p {
+    max-width: 600px;
+
+    margin: 0 auto 30px;
+
+    font-family: Arial, sans-serif;
+
+    color: #e8dcd2;
+}
+
+
+.cta .primary {
+    background-color: #f6ede4;
+
+    color: #5a392b;
+}
+
+
+.cta .primary:hover {
+    background-color: white;
+}
+
+
+/* =========================================================
+   CONTATO
+========================================================= */
+
+.contact {
+    background-color: #f6f0e7;
+}
+
+
+.contact-info {
+    max-width: 750px;
+
+    margin: auto;
+
+    display: grid;
+
+    gap: 15px;
+}
+
+
+.contact-info p {
+    padding: 20px;
+
+    border-radius: 12px;
+
+    background-color: #fffaf4;
+
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+
+    color: #604c40;
+
+    border: 1px solid rgba(112, 75, 56, 0.06);
+
+    transition: 0.3s ease;
+}
+
+
+.contact-info p:hover {
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    padding: 30px 8%;
+
+    background-color: #2e1e18;
+
+    color: #d7c5b7;
+
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE — TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE — CELULAR
+========================================================= */
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 75px 6%;
+    }
+
+
+    .navbar {
+        min-height: 70px;
+
+        padding: 0 18px;
+    }
+
+
+    .logo {
+        font-size: 19px;
+    }
+
+
+    .nav-button {
+        padding: 9px 14px;
+
+        font-size: 11px;
+    }
+
+
+    .hero {
+        min-height: 100vh;
+
+        padding: 130px 7% 80px;
+
+        background-position: center;
+    }
+
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+
+    .hero p {
+        font-size: 15px;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .button {
+        padding: 13px 21px;
+    }
+
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .menu-image {
+        height: 240px;
+    }
+
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .gallery-item {
+        height: 280px;
+    }
+
+
+    .benefits-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+```
